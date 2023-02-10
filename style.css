@@ -1,0 +1,62 @@
+/* Custom Font */
+@font-face {
+    font-family: jp;
+    src: url("African.woff");
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+body{
+    background-color: #ffebd2;
+    margin: 0px;
+}
+
+header{
+    background-color: black;
+    height: 100px;
+    padding-top: 0%;
+}
+
+p{
+    margin: 0;
+}
+
+header p{
+    color: crimson;
+    font-family: jp, 'Times New Roman', Times, serif;
+    font-size: 50px;
+    text-align: center;
+    padding-top: 22px;
+}
+
+header img{
+    float: left;
+}
+
+#formlayout{
+    padding-top: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+#coolstuff{
+    display: flex;
+    background-color: white;
+    border: 5px solid black;
+    border-radius: 10px;
+    padding: 1%;
+}
+
+#sampleForm{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+#sampleForm > fieldset{
+    width: 300px;
+}

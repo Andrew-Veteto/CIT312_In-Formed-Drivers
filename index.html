@@ -1,0 +1,101 @@
+<!-- @format -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>In-formed Drives</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+
+    <header>
+            <a href="index.html">
+                <img src="Jurassic-Park-Logo.png" alt="Jurraic Park 1992 Jeep">
+            </a>
+            <p>1992 Jeep Wrangler</p>
+    </header>
+
+
+    <div id="formlayout">
+        <div id="coolstuff">
+        <form id="sampleForm" action="#" method="get">
+        
+            <!-- Manufacturer -->
+            <fieldset>
+            <legend>Car Options</legend>
+            <label for="Manufacturer">Choose a Manufacturer:</label>
+            <select name="Manufacturer" id="Manufacturer">
+                <option value="volvo">Volvo</option>
+                <option value="Jeep">Jeep</option>
+                <option value="Ford">Ford</option>
+                <option value="audi">Audi</option>
+            </select>
+            <br>
+            <br>
+
+            <!-- Color -->
+            <label for="boxColour">Pick Your Colour: </label>
+                <input type="color" id="boxColour" name="boxColour" />
+            <br>
+            <br>
+
+            <!-- Drive Options -->
+            <label for="driveType">Choose Drive Type:</label>
+            <br>
+            <input
+                type="radio"
+                id="4wheel"
+                name="driveType"
+                value="4wheel"
+            /><label for="driveType">4 Wheel Drive</label><br />
+            <input
+                type="radio"
+                id="2wheel"
+                name="driveType"
+                value="2wheel"
+                checked
+            /><label for="driveType">2 Wheel Drive</label>
+            <br>
+            <br>
+            
+            <!-- License plate text -->
+                <label for="customerComments">Please enter in your license plate:</label>
+                <input type="text" id="licensePlate" name="licensePlate" placeholder="1234abcd">
+            </fieldset>       
+            <br>
+            <br>
+
+            <!-- Date for Delivery -->
+            <fieldset>
+            <legend>Delivery Options</legend>
+            <label for="customerBirthday">Requested Delivery Date</label>
+            <input type="date" id="customerBirthday" name="customerBirthday" min="2023-2-10" max="2023-8-10"/>
+            <br>
+            <br>
+
+            <!-- Time for Delivery -->
+            <label for="customerDeliveryTime">Requested Delivery Time</label>
+            <input type="time" id="customerDeliveryTime" name="customerDeliveryTime"/>
+            </fieldset>
+            <br>
+            <br>
+
+            <!-- Comments -->
+            <Fieldset> 
+            <legend>Additional Comments</legend> 
+            <label for="customerComments">Your comments or notes: </label>
+            <textarea id="customerComments" name="customerComments" placeholder="comments"></textarea>
+            </fieldset>
+            <br>
+            
+            <!-- Submit Button -->
+            <input type="submit" id="process" />
+        </form>
+        </div>
+    </div>
+    
+  </body>
+</html>
